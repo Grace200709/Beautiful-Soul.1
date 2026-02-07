@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Mercy ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="music-btn" onclick="toggleMusic()">🎵</div>
+
+<!-- PASSWORD -->
+<div id="lock" class="screen active">
+  <div class="glass">
+    <h1>Private 💌</h1>
+    <input id="password" type="password" placeholder="Password" />
+    <button onclick="unlock()">Unlock</button>
+    <p id="lock-msg"></p>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="app" class="screen">
+
+  <!-- LETTER -->
+  <div class="glass card">
+    <div class="letter love-letter">
+
+    <h1>My Love Letter ❤️</h1>
+    <p>
+      Mercy, you came into my life quietly…  
+      but you changed everything.
+    </p>
+    <p>
+      You make my heart calm, my days brighter,
+      and my smile real.  
+      I don’t love you because you’re perfect —  
+      I love you because you’re you.
+    </p>
+    <p>
+      I choose you.  
+      Today. Tomorrow. Always. 💍
+    </p>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quizBox" class="glass card">
+    <h2 id="quizQuestion"></h2>
+    <input id="quizInput" placeholder="Type your answer…" />
+    <button onclick="submitQuiz()">Submit</button>
+    <p id="quizMsg"></p>
+  </div>
+<!-- HER MESSAGE -->
+<div id="messageBox" class="glass card">
+  <h2>Leave Me a Message 💌</h2>
+  <textarea id="loveMsg" placeholder="Why do you love me? ❤️"></textarea>
+  <button onclick="saveMessage()">Save Message</button>
+  <p id="savedMsg"></p>
+</div>
+
+  <!-- FINAL -->
+  <div id="afterQuiz" class="glass card" style="display:none;">
+    <h1>You’re My Valentine 💖</h1>
+    <button onclick="celebrate()">Celebrate 🎆</button>
+  </div>
+
+</div>
+
+<!-- POPUP -->
+<div id="popup" class="popup-overlay">
+  <div class="popup">
+    <h2>Happy Valentine’s Day ❤️</h2>
+    <p>Forever yours, Deopzy 💕</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+</div>
+
+<canvas id="fireworks"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
